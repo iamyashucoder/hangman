@@ -85,7 +85,7 @@ lives = 6
 while not game_over :
     display = ""
     user_guess = input("Guess a letter: ").lower()
-    if guess in correct_guess:
+    if user_guess in correct_guess:
         print(f"You have already guessed the letter '{guess}'. Try a different letter.")
         continue
     for letter in random_word:
